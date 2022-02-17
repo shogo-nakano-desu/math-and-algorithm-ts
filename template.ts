@@ -5,9 +5,18 @@ const input = (fs.readFileSync("/dev/stdin", "utf8") as string).split("\n");
 const n = +input[0];
 // ["a", "b"]
 const nums = input[0].split(" ");
+
+/**
+ * N
+ * A A A A A
+ */
 const N = +input[0];
-// [ [ '3', '1', '4', '1', '5' ], [ '' ] ]
-const nums_multi = input.slice(1, N + 1).map((n) => n.split(" "));
+//  [ '3', '1', '4', '1', '5' ]
+const nums_multi = input.slice(1, N + 1).map((n) => n.split(" "))[0];
+
+/**
+ *
+ */
 
 const a = [];
 for (let i = 0; i < n; i++) {
