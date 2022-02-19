@@ -12,14 +12,8 @@ const S = +nums[1];
 
 let ans = 0;
 for (let i = 1; i <= N; i++) {
-  console.log(`i${i}`);
   for (let k = 1; k <= N; k++) {
-    if (k < i) {
-      continue;
-    }
-
     const sum = i + k;
-    console.log(`sum${sum}`);
     if (sum <= S) {
       ans += 1;
     }
