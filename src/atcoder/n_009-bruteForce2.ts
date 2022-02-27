@@ -1,3 +1,4 @@
+// この実装だとNが増えたときにタイムアウトして半分しか点数がもらえない
 import * as fs from "fs";
 
 const input = (fs.readFileSync("/dev/stdin", "utf8") as string).split("\n");
@@ -9,8 +10,6 @@ const S = +nums_first[1];
  * N
  * A A A A A
  */
-// const N = +input[0];
-//  [ '3', '1', '4', '1', '5' ]
 const A = input.slice(1, N + 1).map((n) => n.split(" "))[0];
 
 const main = (N: number, S: number) => {
