@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "shogo-nakano-desu <61229807+shogo-nakano-desu@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "new": "rm case1.txt && touch case1.txt && rm case2.txt && touch case2.txt && rm case3.txt && touch case3.txt && rm case4.txt && touch case4.txt && rm case5.txt && touch case5.txt"
+  },
   "dependencies": {
     "typescript": "^4.5.5"
   },
