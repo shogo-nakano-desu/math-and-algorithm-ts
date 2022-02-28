@@ -12,7 +12,8 @@ const nums = input[0].split(" ");
  */
 const N = +input[0];
 //  [ '3', '1', '4', '1', '5' ]
-const nums_multi = input.slice(1, N + 1).map((n) => n.split(" "))[0];
+const bigints = input[1].split(" ").map((a: string) => BigInt(a));
+const numbers = input.slice(1, N + 1).map((n) => n.split(" "))[0];
 
 /**
  *
